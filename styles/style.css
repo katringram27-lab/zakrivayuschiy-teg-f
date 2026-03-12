@@ -7,7 +7,7 @@
   .header__title,
   .like-icon,
   .button__text {
-    font-family: var(--variable-font-accent, 'PressStart2P'), sans-serif;
+    font-family: var(--variable-font-accent, 'PressStart2P'), var(--alter-system-font, sans-serif);
   }
 }
 
