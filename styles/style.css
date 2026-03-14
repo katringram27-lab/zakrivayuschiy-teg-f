@@ -7,7 +7,9 @@
   .header__title,
   .like-icon,
   .button__text {
-    font-family: var(--variable-font-accent, 'PressStart2P'), var(--alter-system-font, sans-serif);
+    font-family:
+      var(--variable-font-accent, 'PressStart2P'),
+      var(--alter-system-font, sans-serif);
   }
 }
 
@@ -21,12 +23,38 @@
   background-position: center;
   font-size: var(--main-font-size, 18px);
   font-variation-settings: 'wght' var(--font-weight-main, 400);
-  background-image: var(--background-image, repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%));
+  background-image: var(
+    --background-image,
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%)
+  );
   inline-size: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
+
+  .header,
+  .header__title,
+  .like-icon,
+  .button__text {
+    font-family:
+      var(--variable-font-accent, 'PressStart2P'),
+      var(--alter-system-font, sans-serif);
+  }
 
 .main {
   display: flex;
@@ -87,7 +115,7 @@
 }
 
 .button__text,
-.floppy
+.floppy,
 .floppy-dialog {
   position: relative;
   color: var(--accent-color-text, #fff);
@@ -187,14 +215,17 @@ svg.like-icon {
   font-family: var(--variable-font-accent, 'PressStart2P');
   mix-blend-mode: hard-light;
   text-shadow:
-  -1px 0 var(--background-color),
-  0 1px var(--background-color),
-  1px 0 var(--background-color),
-  0 -1px var(--background-color);
+    -1px 0 var(--background-color),
+    0 1px var(--background-color),
+    1px 0 var(--background-color),
+    0 -1px var(--background-color);
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
   .watermark {
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
@@ -258,6 +289,8 @@ svg.like-icon {
 .floppy-dialog {
   width: 39px;
   height: 39px;
+  display: flex;
+  align-self: center;
 }
 
 .button::before {
@@ -396,6 +429,7 @@ dialog::backdrop {
   text-align: center;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 dialog:not([open]) {
@@ -419,5 +453,10 @@ dialog:not([open]) {
   svg.floppy {
     width: 28px;
     height: 28px;
+  }
+
+  .dialog {
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
   }
 }

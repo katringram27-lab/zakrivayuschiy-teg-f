@@ -1,25 +1,40 @@
 :root {
-    --variable-font-main: 'Inter-Variable';
-    --variable-font-accent: 'PressStart2P';
-    --alter-system-font: sans-serif;
-    --color-text: #000;
-    --main-font-size: 18px;
-    --font-weight-main: 400;
-    --font-weight-title: 700;
-    --line-height-text: 21px;
-    --line-height-text-botton: 90%;
-    --line-height-dialog: 150%;
-    --background-image: repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), repeating-linear-gradient(to bottom, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-    --outline-main: 2px solid #000;
-    --padding-header: 100px;
-    --gap-card: 50px;
-    --padding-text: 25px;
-    --margin-block-end: 27px;
-    --floppy: #000;
-    --accent-color: #000;
-    --accent-color-text: #fff;
-    --box-shadow-focus: 2px 2px 0px 0px #000;
-    --background-color: #fff;
-    --heart-contour-color: #000;
-    --heart-body-color: rgba(255, 0, 0, 1);
+  --variable-font-main: 'Inter-Variable';
+  --variable-font-accent: 'PressStart2P';
+  --alter-system-font: sans-serif;
+  --color-text: #000;
+  --main-font-size: 18px;
+  --font-weight-main: 400;
+  --font-weight-title: 700;
+  --line-height-text: 21px;
+  --line-height-text-botton: 90%;
+  --line-height-dialog: 150%;
+  --background-image:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --outline-main: 2px solid #000;
+  --padding-header: 100px;
+  --gap-card: 50px;
+  --padding-text: 25px;
+  --margin-block-end: 27px;
+  --floppy: #000;
+  --accent-color: #000;
+  --accent-color-text: #fff;
+  --box-shadow-focus: 2px 2px 0px 0px #000;
+  --background-color: #fff;
+  --heart-contour-color: #000;
+  --heart-body-color: rgba(255, 0, 0, 1);
 }

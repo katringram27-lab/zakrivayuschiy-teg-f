@@ -1,5 +1,5 @@
 module.exports = {
   rules: {
-    'no-duplicate-selectors': true
-  }
-}
+    'no-duplicate-selectors': true,
+  },
+};
